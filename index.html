@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- swiper slider -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+          <div class="search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span>Search...</span>
+          </div>  
+          <h2 class="logo">magdesign</h2>
+          <div class="nav-icons">
+              <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <nav class="nav">
+        
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="#">Burger King</a>
+            <a href="#">Salqin Ichimliklar</a>
+            <a href="#">Hot Dog</a>
+            <a href="#">Lavash</a>
+            <a href="#">Contact Us</a>
+
+          </div>
+        </nav>
+        </nav>
+
+        <div class="main">
+            <div class="swiper">
+          
+              <!-- wrapper for slide -->
+                  <div class="swiper-wrapper">
+          
+                  <!-- single slide -->
+                      <div class="swiper-slide">
+                          <div class="wrapper">
+                              <div class="wrapper-item">
+                                <div class="right">
+                                    <img src="https://t3.ftcdn.net/jpg/02/14/83/66/360_F_214836687_ViWmBQfl0VOOMkjPmQjF9B12tfqLenO0.jpg" alt="product img">
+                                  </div>
+                                <div class="left">
+                                  <h2>Burger King</h2>
+                                  <h3>
+                                    Price Cheap $ 5.00  <span>$ 6.50</span>
+                                  </h3>
+        
+                                </div>
+                                
+                              </div>
+                          </div>
+                      </div>
+                       <!-- single slide -->
+                       <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="wrapper-item">
+                                <div class="right">
+                                    <img src="https://zamin.uz/uploads/posts/2018-02/1519147929_gazlangan.jpg" alt="product img">
+                                  </div>
+                              <div class="left">
+                                <h2>Salqin Ichimliklar</h2>
+                                <h3>
+                                  Price Cheap $ 2.00  <span>$ 3.50</span>
+                                </h3>
+      
+                              </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                       <!-- single slide -->
+                       <div class="swiper-slide">
+                        <div class="wrapper">
+                            <div class="wrapper-item">
+                                <div class="right">
+                                  <img src="https://img.freepik.com/free-photo/delicious-hot-dogs-with-mustard-onion_23-2148768194.jpg" alt="product img">
+                                </div>
+                              <div class="left">
+                                <h2>Burger King</h2>
+                                <h3>
+                                  Price Cheap $ 2.00  <span>$ 4.50</span>
+                                </h3>
+      
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- single slide -->
+                     <div class="swiper-slide">
+                      <div class="wrapper">
+                          <div class="wrapper-item">
+                            <div class="right">
+                                <img src="https://img.freepik.com/premium-photo/shawarma-roll-lavash-grilled-meat-with-vegetables-sandwich-cut-white-background-horizontal-copy-spase_322022-355.jpg" alt="product img">
+                              </div>
+                            <div class="left">
+                              <h2>Burger King</h2>
+                              <h3>
+                                Price Cheap $ 7.00  <span>$ 10.50</span>
+                              </h3>
+                            </div>
+                          
+                          </div>
+                      </div>
+                  </div>
+                  
+                  </div>
+          
+                  <!-- pagination -->
+                  <div class="swiper-pagination"></div>
+          
+                  <!-- navigation buttton -->
+                  <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+            </div> 
+          </div>
+
+       <div class="card"></div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.swiper', {
+            autoplay: true,
+            loop: true, // creates a infinite loop of slides
+            navigation: { // activate navigation with navigation buttons
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {// activate paginations
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+
+        // keyboard and mousewheel navigation
+        keyboard: true,
+        mousewheel: true,
+        slidesPerView: 1,
+        spaceBetween: 5,
+      // Responsive breakpoints
+      breakpoints: {
+          // when window width is >= 320px
+          320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+          slidesPerView: 2,
+          spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+          slidesPerView: 1,
+          spaceBetween: 40
+          }
+    }
+        // for other than sliding effect
+
+        // effect: 'creative',
+        // creativeEffect: {
+        //  prev: {
+        //      // will set `translateZ(-400px)` on previous slides
+        //      translate: [0, 0, -400],
+        //  },
+        //  next: {
+        //      // will set `translateX(100%)` on next slides
+        //      translate: ['100%', 0, 0],
+        //  },
+        // },
+        // effect: 'coverflow',
+        })
+    </script>
+
+    <script src="app.js"></script>
+</body>
+</html>
